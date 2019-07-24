@@ -1,11 +1,10 @@
-* {
-    font-family: 'Do Hyeon', sans-serif;
-}
 body {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 150%;
     margin: 0px;
 }
 a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: black;
 }
@@ -17,11 +16,11 @@ h1 {
 ul {
     border-right: 2px black dotted;
     display: inline-block;
-    width: 150px;
+    width: 175px;
 }
 #container {
     display: grid;
-    grid-template-columns: 225px 1fr;
+    grid-template-columns: 250px 1fr;
     background-color: azure;
 }
 hr {
