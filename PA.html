@@ -2,28 +2,32 @@
 
 <html>
   <head>
-    <title>학교 방송 - PA 방송</title>
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="cam.ico">
-    <link href="style.css" rel="stylesheet">
-    <meta charset="utf-8">
+    <title>학교 방송 시스템 - PA 방송</title> <!-- 사이트 이름 -->
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet"> <!-- 폰트 링크 -->
+    <link rel="shortcut icon" href="cam.ico"> <!-- 파비콘 -->
+    <link href="style.css" rel="stylesheet"> <!-- css 파일 링크 -->
+    <meta charset="utf-8"> <!-- 글자 인코딩 방식 -->
   </head>
 
   <body>
-    <h1><a href="index.html">학교 방송</a></h1>
+    <!-- 사이트 제목 -->
+    <h1><a href="index.html">학교 방송 시스템</a></h1>
 
-    <hr width=100% color=black noshade>
+    <!-- 가로줄 -->
+    <hr style="border: 0; height: 3px; background: black;">
 
     <div id="container">
+      <!-- 메뉴 -->
       <div>
         <ul>
           <a href="PA.html"><li>PA 방송</li></a><br><br>
           <a href="SR.html"><li>SR 방송</li></a><br><br>
           <a href="AV.html"><li>A/V 방송</li></a>
-          </ul>
-        </div>
+        </ul>
+      </div>
 
-        <div>
+      <!-- 본문 -->
+      <div>
         <h2>PA(Public Address) 방송 (전관방송)</h2>
 
         <h3>정의</h3>
@@ -42,9 +46,41 @@
       </div>
     </div>
 
-    <hr width=100% color=black noshade>
+    <!-- 가로줄 -->
+    <hr style="border: 0; height: 3px; background: black;">
 
-    <br>ⓒ 2019. Nogojiri all rights reserved.<br>
+    <!-- 저작권 표시 -->
+    <br>ⓒ 2019. Nogojiri all rights reserved.<br><br>
+
+    <!-- 야간/주간 모드 변경 버튼 -->
+    <input type=button value="야간 모드" onclick="
+    if(this.value==='야간 모드') {
+      document.querySelector('h1').style.color='white';
+      document.querySelectorAll('li')[0].style.color='white';
+      document.querySelectorAll('li')[1].style.color='white';
+      document.querySelectorAll('li')[2].style.color='white';
+      document.querySelector('div').style.backgroundColor='gray';
+      document.querySelector('h1').style.backgroundColor='black';
+      document.querySelectorAll('hr')[0].style.background='white';
+      document.querySelectorAll('hr')[1].style.background='white';
+      document.querySelector('body').style.backgroundColor='gray';
+      document.querySelector('body').style.color='white';
+      this.value='주간 모드';
+    }
+    else {
+      document.querySelector('h1').style.color='black';
+      document.querySelectorAll('li')[0].style.color='black';
+      document.querySelectorAll('li')[1].style.color='black';
+      document.querySelectorAll('li')[2].style.color='black';
+      document.querySelector('div').style.backgroundColor='azure';
+      document.querySelector('h1').style.backgroundColor='rgb(229, 253, 189)';
+      document.querySelectorAll('hr')[0].style.background='black';
+      document.querySelectorAll('hr')[1].style.background='black';
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      this.value='야간 모드';
+    }
+    ">
 
   </body>
 </html>

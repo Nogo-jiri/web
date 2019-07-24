@@ -1,28 +1,28 @@
 body {
-    font-family: 'Do Hyeon', sans-serif;
-    font-size: 150%;
-    margin: 0px;
+    font-family: 'Do Hyeon', sans-serif; /* 폰트 변경 */
+    font-size: 150%; /* 폰트 크기 1.5배 */
+    margin: 0px; /* body 가장자리 제거 */
 }
 a {
-    display: block;
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* 하이퍼링크 밑줄 제거 */
+    color: black; /* 하이퍼링크 색깔 제거 */
 }
 h1 {
-    padding: 50px;
-    margin: 0px;
-    background-color: rgb(229, 253, 189);
+    padding: 50px; /* 제목 패딩 확장 */
+    margin: 0px; /* 제목 가장자리 제거 */
+    background-color: rgb(229, 253, 189); /* 제목 색상 설정 */
 }
 ul {
-    border-right: 2px black dotted;
-    display: inline-block;
-    width: 175px;
+    border-right: 3px black dotted; /* 리스트의 오른쪽에 점선(본문과의 구별선) 추가 */
+    display: inline-block; /* 리스트를 inline-block으로 보임 */
+    width: 175px; /* 리스트 넓이 설정 */
 }
 #container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    background-color: azure;
+    display: grid; /* container div를 grid로 보임 */
+    grid-template-columns: 250px 1fr; /* 왼쪽 그리드(메뉴) 넓이 설정 */
+    background-color: azure; /* container div 배경 색상 설정 */
 }
 hr {
-    margin: 0px;
+    margin: 0px; /* 가로줄 가장자리 제거 */
+    color: black; /* 가로줄 색상 설정 */
 }
