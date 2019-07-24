@@ -1,0 +1,28 @@
+body {
+    font-family: '청소년서체';
+    font-size: 125%;
+    margin: 0px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    padding: 50px;
+    margin: 0px;
+    background-color: rgb(229, 253, 189);
+}
+ul {
+    border-right: 2px black dotted;
+    display: inline-block;
+    width: 150px;
+}
+#container {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    background-color: azure;
+}
+hr {
+    margin: 0px;
+}
