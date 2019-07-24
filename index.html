@@ -40,8 +40,14 @@
     <!-- 저작권 표시 -->
     <br>ⓒ 2019. Nogojiri all rights reserved.<br><br>
 
+    <!-- 구글 검색창 -->
+    <form action="https://www.google.com/search">
+      <input name="q" id="form" type="text" placeholder="Google 검색">
+      <input type="submit" id="send" value="검색">
+    </form><br>
+
     <!-- 야간/주간 모드 변경 버튼 -->
-    <input type=button value="야간 모드" onclick="
+    <input type=button value="야간 모드" id="mode" onclick="
     if(this.value==='야간 모드') {
       document.querySelector('h1').style.color='white';
       document.querySelectorAll('li')[0].style.color='white';
@@ -68,12 +74,10 @@
       document.querySelector('body').style.color='black';
       this.value='야간 모드';
     }
-    "><br><br>
+    ">
 
-    <form action="https://www.google.com/search">
-      <input name="q" type="text" placeholder="Google 검색">
-      <input type="submit" value="검색">
-    </form>
+    <!-- 가로줄 -->
+    <hr style="border: 0; height: 3px; background: black;">
 
     <br>
     <object type="application/x-shockwave-flash" style="outline:none;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" width="360" height="270">
